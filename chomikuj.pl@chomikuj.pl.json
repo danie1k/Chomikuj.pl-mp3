@@ -1,0 +1,9 @@
+{
+	"type": "sandbox",
+	"ns": "chomikuj.pl",
+	"author": "danie1k",
+	"prefix": "Chomikuj.pl mp3 downloader",
+	"match": "^http://chomikuj\\.pl/(.*?)\\.mp3\\(audio\\)$",
+	"static": false,
+	"process": "var matchFile = /^http:\\/\\/chomikuj\\.pl\\/(.*?\\/){1,}(.*?)\\,([0-9]{1,})\\.mp3/gi.exec(baseURL);  var fileName = matchFile[2].replace(/\\*../g, '_').replace(/\\+/g, ' '); var fileID = matchFile[3]; setURL('http://chomikuj.pl/Audio.ashx?id='+fileID+'&type=2&tp=mp3', fileName+'.mp3'); finish();"
+}
