@@ -1,5 +1,4 @@
-# Chomikuj.pl-mp3
-DownThemAll! Anticontainter plugin for mass downloading mp3's from Chomikuj.pl 
----
-## @TODO
-* Downloading selected directories with pagination
+# Chomikuj.pl mp3 downloader
+A Firefox browser add-on.
+
+Download mp3's from Chomikuj.pl without logging in!
