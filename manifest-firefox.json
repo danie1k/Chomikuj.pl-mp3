@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Chomikuj.pl mp3 downloader",
+  "description": "Download mp3's from Chomikuj.pl without logging in!",
+  "homepage_url": "https://github.com/danie1k/Chomikuj.pl-mp3",
+  "version": "2019.02",
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "permissions": [
+    "*://*.chomikuj.pl/*/*",
+    "activeTab",
+    "downloads",
+    "menus"
+  ],
+  "icons": {
+    "16": "icons/hamster-16.png",
+    "32": "icons/hamster-32.png"
+  }
+}
